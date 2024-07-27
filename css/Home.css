@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+body {
+    /* background: rgb(0, 0, 40); */
+    background: white;
+    height: 100vh;
+    overflow: auto;
+}
+
+img {
+    width: 100%;
+}
+
+/* -------------------- Header -------------------------- */
+
+
+.home-header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    background: white;
+    top: 0;
+    width: 100%;
+    height: 6rem;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.10);
+    margin-bottom: 20px;
+}
+
+.header-elements {
+    height: 3rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    /* background: cornflowerblue; */
+    justify-content: space-around;
+}
+
+.home-header .home-header-logo {
+    height: 5rem;
+    width: 5rem;
+    padding: 0 4rem 0 4rem;
+}
+
+.home-header .home-search-bar {
+    height: 2rem;
+    width: 14rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    border: solid black 0.1rem
+}
+
+.home-header .home-search-input {
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+}
+
+.home-header .home-search-input:active {
+    outline: none;
+}   
+
+.home-header .home-search-bar img {
+    /* height: 1.5rem; */
+    /* width: 1.5rem;s */
+    padding: 0.5rem;
+    right: 0;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+
+/* -------------------- Main -------------------------- */
+
+.container-items {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.item {
+    background-color: white;
+    border-radius: 10px;
+    color: grey;
+}
+
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.info-product {
+    padding: 1rem 2rem;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10;
+}
+
+.item img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    transition: all .5s;
+}
+
+.item figure {
+    overflow: hidden;   
+}
+
+.item:hover img {
+    transform: scale(1.2);
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.info-product button {
+    border: none;
+    background: none;
+    background-color: #000;
+    color: white;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.footer {
+    background: #000;
+    color: white;
+    height: 20rem;
+    width: 100%;
+}
